@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -49,11 +49,11 @@ header nav ul li a {
     padding: 10px 10px;
 }
 
-header nav ul li a:hover{
+header nav ul li a:hover {
     border-bottom: 2px solid white;
 }
 
-/*content*/
+/* content */
 
 .content {
     display: flex;
@@ -64,7 +64,7 @@ header nav ul li a:hover{
     position: relative;
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(to bottom right, rgba(96,76,76,.6),rgba(96,76,76,.6)), url("gambar/background.jpeg");
+    background-image: linear-gradient(to bottom right, rgba(96, 76, 76, .6), rgba(96, 76, 76, .6)), url("gambar/background.jpeg");
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -83,12 +83,13 @@ header nav ul li a:hover{
 }
 
 
-/*Menu*/
+/* Menu */
 
 .menu {
     background-color: #333333;
     width: 100%;
 }
+
 .menu .menu-header {
     display: flex;
     padding: 10px;
@@ -115,8 +116,117 @@ header nav ul li a:hover{
     background-color: #404040;
 }
 
-.menu .menu-content .hot-coffee, 
-.cold-coffee, 
+.menu .menu-content .hot-coffee,
+.cold-coffee,
 .cappucino-coffee {
     width: 250px;
 }
+
+.menu .menu-content .hot-coffee-image img {
+    border-radius: 50%;
+}
+
+.menu .menu-content .cold-coffee-image img {
+    border-radius: 50%;
+}
+
+.menu .menu-content .cappucino-coffee-image img {
+    border-radius: 50%;
+}
+
+.menu .menu-content .hot-coffee-body,
+.cold-coffee-body,
+.cappucino-coffee-body {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.menu .menu-content .hot-coffee-body h2,
+.cold-coffee-body h2,
+.cappucino-coffee-body h2 {
+    color: orange;
+}
+
+.menu .menu-content .hot-coffee-body label,
+.cold-coffee-body label,
+.cappucino-coffee-body label {
+    margin-top: 10px;
+    color: white;
+}
+
+
+
+/* Shop */
+
+.shop {
+    background-color: #333333;
+    width: 100%;
+}
+
+.shop .shop-header {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shop-header h3 {
+    color: orange;
+    padding: 10px 30px;
+}
+
+.shop-header h4 {
+    color: orange;
+    padding: 10px 20px;
+}
+
+.shop-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #404040;
+    padding: 50px 0;
+    flex-wrap: wrap;
+}
+
+.shop-box .card {
+    width: 280px;
+    margin: 20px;
+}
+
+.shop-box .card-image {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+}
+
+.shop-box .card-image img:hover {
+    transform: scale(1.1);
+    transition: transform .4s ease-in-out;
+}
+
+.shop-box .card-body {
+    padding: 20px;
+    color: white;
+    border: 3px solid #3B3B3B;
+}
+
+.shop-box .card-body h3 {
+    padding: 10px 0;
+}
+
+.shop-box .card-body i {
+    color: yellow;
+    font-size: 10px;
+    position: relative;
+    bottom: 5px;
+}
+
+.shop-box .card-body .cash {
+    font-size: 22px;
+    margin-left: 90px;
+}
+
+
+/* Contact */
+
