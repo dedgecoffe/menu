@@ -76,7 +76,47 @@ header nav ul li a:hover{
     padding: 5px;
     color: white;
 }
+
 .content p {
     font-size: 22px;
     color: white;
+}
+
+
+/*Menu*/
+
+.menu {
+    background-color: #333333;
+    width: 100%;
+}
+.menu .menu-header {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-header h3 {
+    color: orange;
+    padding: 10px 30px;
+}
+
+.menu-header h4 {
+    color: orange;
+    padding: 10px 20px;
+}
+
+.menu .menu-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px 0;
+    flex-wrap: wrap;
+    background-color: #404040;
+}
+
+.menu .menu-content .hot-coffee, 
+.cold-coffee, 
+.cappucino-coffee {
+    width: 250px;
 }
