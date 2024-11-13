@@ -253,7 +253,12 @@ header nav ul li a:hover {
 
 .shop-box .card-image img:hover {
     transform: scale(1.1);
-    transition: transform .4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
+}
+
+.footer .footer-box .social-media a:hover {
+    opacity: 0.7;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .shop-box .card-body {
