@@ -17,7 +17,7 @@
         <div class="logo">
             <a href="#">Edge <span>Coffee</span></a>
         </div>
-
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -226,12 +226,12 @@
                 <form>
                     <h2>Contact Us</h2>
                     <div class="form-content">
-                        <input type="text" required>
+                        <input type="text" name="username" required placeholder="Enter your username">
                         <span></span>
                         <label>Username</label>
-                    </div>
+                    </div>                    
                     <div class="form-content">
-                        <input type="email" required>
+                        <input type="email" name="email" required placeholder="Enter your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                         <span></span>
                         <label>Email</label>
                     </div>
@@ -239,8 +239,7 @@
                 </form>
             </div>
         </div>
-    </div>
-
+    </div>    
 
     <div class="footer">
         <div class="footer-box">
@@ -259,6 +258,21 @@
         </div>
     </div>
 
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.hamburger');
+            menu.classList.toggle('active'); // Toggle class to show or hide the menu
+        }
+    </script>
+    <script>
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>    
 </body>
-
 </html>

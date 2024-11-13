@@ -17,6 +17,7 @@ img {
     width: 100%;
 }
 
+/* Header Style */
 header {
     display: flex;
     align-items: center;
@@ -44,12 +45,6 @@ header .logo a span {
     color: orange;
 }
 
-header .logo a:hover {
-    color: orange;
-    transform: scale(1.1);
-    transition: all 0.3s ease-in-out;
-}
-
 header nav ul {
     display: flex;
 }
@@ -64,6 +59,41 @@ header nav ul li a {
 
 header nav ul li a:hover {
     border-bottom: 2px solid white;
+}
+
+/* Add Hamburger Icon for Smaller Screens */
+.hamburger {
+    display: none; /* Initially hide hamburger icon */
+    font-size: 30px;
+    color: white;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+    header nav ul {
+        display: none; /* Hide the navigation links by default */
+    }
+
+    header .hamburger {
+        display: block; /* Show hamburger icon on small screens */
+    }
+
+    .hamburger.active + nav ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 10px 0;
+    }
+
+    header nav ul li a {
+        text-align: center;
+        padding: 15px;
+        font-size: 18px;
+    }
 }
 
 /* content */
@@ -330,6 +360,7 @@ header nav ul li a:hover {
     position: relative;
     overflow: hidden;
     z-index: 1;
+    transition: transform 0.3s ease; /* Efek transform saat hover */
 }
 
 .contact-body form button::after {
@@ -411,6 +442,7 @@ form .form-content input:valid~span::before {
 
 .contact-body form button:hover {
     background-color: #ff6681;
+    transform: scale(1.05); /* Menambahkan efek zoom saat hover */
 }
 
 
